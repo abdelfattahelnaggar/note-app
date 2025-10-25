@@ -24,6 +24,7 @@ export default function NotFoundPage() {
         <p className="text-lg text-gray-600 max-w-md mx-auto">
           Oops! The page you're looking for doesn't exist or has been moved.
         </p>
+
           <Button 
             onClick={() => navigate('/', { replace: true })}
           >
