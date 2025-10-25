@@ -32,8 +32,8 @@ export default function NoteCard({
           })}
         </CardDescription>
       </CardHeader>
-      <CardContent className={`${isDetailed ? 'text-lg leading-relaxed px-8 py-6' : 'line-clamp-1'}`}>
-        <p className={isDetailed ? 'whitespace-pre-wrap break-all' : ''}>{note?.body}</p>
+      <CardContent className={`${isDetailed ? 'text-lg leading-relaxed px-8 py-6' : 'line-clamp-1'} break-all`}>
+        <p>{note?.body}</p>
       </CardContent>
       {!isDetailed && (
         <CardFooter className="flex flex-col justify-center items-center">
